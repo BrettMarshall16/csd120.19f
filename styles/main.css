@@ -1,0 +1,26 @@
+@CHARSET "UTF-8";
+
+body {
+  background-color: #8B5DC8;
+}
+
+h1 {
+  color: #59249E;
+}
+
+a {
+  color: #CEB5F0;
+}
+
+nav a {
+    color: #59249E;
+}
+
+.byline {
+    opacity: 0.5;
+    color: purple;
+}
+
+#page-copyright {
+    color: #CEB5F0;
+}
