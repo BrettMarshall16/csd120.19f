@@ -7,6 +7,9 @@ body {
 h1 {
   color: #59249E;
 }
+h2 {
+  color: #59249E;
+}
 
 a {
   color: #CEB5F0;
@@ -17,8 +20,8 @@ nav a {
 }
 
 .byline {
-    opacity: 0.5;
     color: purple;
+    color: rgba(128,0,128,0.5);
 }
 
 #page-copyright {
