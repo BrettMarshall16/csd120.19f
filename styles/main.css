@@ -2,28 +2,57 @@
 
 body {
   background-color: #8B5DC8;
+  font-family: 'Karla', sans-serif;
 }
 
 h1 {
+  background-image: url("../images/gradient.png");  
+  background-repeat: repeat-x;
   color: #59249E;
+  font-family: 'Space Mono', monospace;
 }
 h2 {
+  background-image: url("../images/gradient.png");  
+  background-repeat: repeat-x;  
   color: #59249E;
+  font-family: 'Karla', sans-serif;
 }
 
 a {
   color: #CEB5F0;
+  text-decoration: none;
 }
 
 nav a {
     color: #59249E;
+    
+}
+
+nav ul {
+    list-style: none;
 }
 
 .byline {
     color: purple;
     color: rgba(128,0,128,0.5);
+    font-size: 70%;
 }
 
 #page-copyright {
     color: #CEB5F0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
+
+.bio {
+    text-indent: 3em;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+}
+
+ul {
+    list-style-type: upper-roman;
+    }
