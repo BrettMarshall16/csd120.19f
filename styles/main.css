@@ -51,15 +51,24 @@ nav ul {
 footer {
   text-align: center;
   font-size: 12px;
-  padding: 0em 0em 2em;
+  padding: em 0em 2em;
+  margin-bottom: 2em;
 }
 
 ul {
     list-style-type: upper-roman;
     }
 #width-wrap {
-    margin: 0 auto;   
+    margin-left: auto;
+    margin-right: auto;
     width: 1024px;
-    padding: 0em 2em 3em;
-    border-color: 1px solid rgba(0,0,0,0.3)
+    background-color: #D833FF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+    padding: em 2em 3em;
+    margin-bottom: 3em;
+    border: 1px solid rgb(0 0 0 / 0.3)
+    
 }
+header nav ul{
+    padding: 0;
+} 
