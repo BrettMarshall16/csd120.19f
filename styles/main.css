@@ -72,3 +72,28 @@ ul {
 header nav ul{
     padding: 0;
 } 
+
+
+figure img{
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+} 
+
+h, h1, h2, h3, h4, h5, h6 {
+
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(121,9,117,1) 55%, rgba(255,0,249,1) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+footer hr {
+    width: 300px;
+    width: 50vw;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    border-top: 3px solid purple;
+    border-bottom: 8px dotted purple;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
