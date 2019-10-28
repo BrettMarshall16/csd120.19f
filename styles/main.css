@@ -1,31 +1,32 @@
 @charset "utf-8";
 
 body {
-  background-color: #8B5DC8;
-  font-family: 'Karla', sans-serif;
+    background-color: #8B5DC8;
+    font-family: 'Karla', sans-serif;
 }
 
 h1 {
-  background-image: url("../images/gradient.png");  
-  background-repeat: repeat-x;
-  color: #59249E;
-  font-family: 'Space Mono', monospace;
+    background-image: url("../images/gradient.png");
+    background-repeat: repeat-x;
+    color: #59249E;
+    font-family: 'Space Mono', monospace;
 }
+
 h2 {
-  background-image: url("../images/gradient.png");  
-  background-repeat: repeat-x;  
-  color: #59249E;
-  font-family: 'Karla', sans-serif;
+    background-image: url("../images/gradient.png");
+    background-repeat: repeat-x;
+    color: #59249E;
+    font-family: 'Karla', sans-serif;
 }
 
 a {
-  color: #CEB5F0;
-  text-decoration: none;
+    color: #CEB5F0;
+    text-decoration: none;
 }
 
 nav a {
     color: #59249E;
-    
+
 }
 
 nav ul {
@@ -34,7 +35,7 @@ nav ul {
 
 .byline {
     color: purple;
-    color: rgba(128,0,128,0.5);
+    color: rgba(128, 0, 128, 0.5);
     font-size: 70%;
 }
 
@@ -49,16 +50,17 @@ nav ul {
 }
 
 footer {
-  text-align: center;
-  font-size: 12px;
-  padding: 0 0 2em 0;
-  margin-bottom: 2em;
+    text-align: center;
+    font-size: 12px;
+    padding: 0 0 2em 0;
+    margin-bottom: 2em;
 }
 
 ul {
     list-style-type: upper-roman;
-    }
-#width-wrap {
+}
+
+.width-wrap {
     margin-left: auto;
     margin-right: auto;
     max-width: 1024px;
@@ -66,34 +68,44 @@ ul {
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
     padding: 0 2em 0 2em;
     margin-bottom: 3em;
-    border: 1px solid rgb(0 0 0 / 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: none;
     
 }
-header nav ul{
+
+header nav ul {
     padding: 0;
-} 
+    margin: 0;
+}
 
 
-figure img{
+figure img {
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-} 
+}
 
-h, h1, h2, h3, h4, h5, h6 {
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-    background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(121,9,117,1) 55%, rgba(255,0,249,1) 100%);
-    -webkit-text-fill-color: transparent;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 117, 1) 55%, rgba(255, 0, 249, 1) 100%);
+    color: transparent;
     -webkit-background-clip: text;
+    background-clip: text;
 }
 
 footer hr {
-    width: 300px;
+    min-width: 300px;
     width: 50vw;
     margin-top: 3em;
     margin-bottom: 2em;
     border-top: 3px solid purple;
     border-bottom: 8px dotted purple;
+    border-left: none;
+    border-right: none;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
