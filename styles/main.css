@@ -33,6 +33,15 @@ nav ul {
     list-style: none;
 }
 
+nav li{
+    float:left;
+}
+
+header nav {
+    float:right;
+    border-bottom: 1px dotted;
+}
+
 .byline {
     color: purple;
     color: rgba(128, 0, 128, 0.5);
@@ -78,7 +87,6 @@ header nav ul {
     margin: 0;
 }
 
-
 figure img {
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
@@ -109,3 +117,40 @@ footer hr {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
+
+.mugshot ~ * {
+    -webkit-box-sizing : border-box;
+    -moz-box-sizing : border-box;
+    -o-box-sizing : border-box;
+    box-sizing: border-box;
+}
+
+.mugshot{
+    position: relative;
+    float: right;
+    top: -1em;
+}
+.paperclip{
+    position: absolute;
+    top:-10px;
+    right:-7px;
+    background-image: url("../images/paperclip.png");
+    height:50px;
+    width:50px;
+    background-size: contain;   
+}
+
+.MyThreeFavorite {
+    clear: right;
+}
+
+header {
+    margin-right:-2em;
+    margin-left:-2em;
+    border-top: 4px solid;
+    border-color: rgba(0, 0, 0, 0.1)
+}
+
+
+
+
