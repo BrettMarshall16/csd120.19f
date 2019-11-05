@@ -26,6 +26,12 @@ a {
 
 nav a {
     color: #59249E;
+    padding-top:1em;
+    padding-bottom:0.5em;
+    margin-left:1em;
+    margin-right:1em;
+    border-style:solid;
+    border-color:transparent;
 
 }
 
@@ -39,7 +45,11 @@ nav li{
 
 header nav {
     float:right;
-    border-bottom: 1px dotted;
+    border-bottom: 1px dotted ;
+    border-bottom-color: rgba(0, 0, 0, .3);
+    margin-right:2em;
+    margin-left:2em;
+    margin-top:-4px;
 }
 
 .byline {
@@ -151,6 +161,8 @@ header {
     border-color: rgba(0, 0, 0, 0.1)
 }
 
-
+nav a:active {
+    border-top:4px solid red;
+}
 
 
