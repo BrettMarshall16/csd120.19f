@@ -50,6 +50,8 @@ header nav {
     margin-right:2em;
     margin-left:2em;
     margin-top:-4px;
+    height:auto;
+    border-width:auto;
 }
 
 .byline {
@@ -161,8 +163,18 @@ header {
     border-color: rgba(0, 0, 0, 0.1)
 }
 
-nav a:active {
+nav .active:hover {
     border-top:4px solid red;
 }
 
+div .backtotop {
+    text-align: right;
+    margin-right: -0.5em;
+    opacity: 0.5;
+    position: relative;
+    bottom:3.5em;
+}
+div .backtotop:hover {
+    opacity: 1;
+}
 
