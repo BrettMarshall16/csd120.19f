@@ -50,8 +50,7 @@ header nav {
     margin-right:2em;
     margin-left:2em;
     margin-top:-4px;
-    height:auto;
-    border-width:auto;
+    overflow: hidden;
 }
 
 .byline {
