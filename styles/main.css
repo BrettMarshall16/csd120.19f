@@ -30,13 +30,15 @@ nav a {
     padding-bottom:0.5em;
     margin-left:1em;
     margin-right:1em;
+    border-top-width: 4px;
     border-style:solid;
     border-color:transparent;
-
+    display: block;
 }
 
 nav ul {
     list-style: none;
+    float:right;
 }
 
 nav li{
@@ -44,7 +46,6 @@ nav li{
 }
 
 header nav {
-    float:right;
     border-bottom: 1px dotted ;
     border-bottom-color: rgba(0, 0, 0, .3);
     margin-right:2em;
@@ -52,6 +53,7 @@ header nav {
     margin-top:-4px;
     height:auto;
     border-width:auto;
+    overflow: auto;
 }
 
 .byline {
@@ -130,7 +132,7 @@ footer hr {
     border-top-right-radius: 8px;
 }
 
-.mugshot ~ * {
+* {
     box-sizing: border-box;
 }
 
@@ -160,18 +162,20 @@ header {
     border-color: rgba(0, 0, 0, 0.1)
 }
 
-nav .active:hover {
+nav a:hover {
     border-top:4px solid red;
 }
 
-div .backtotop {
+div .back-to-top {
     text-align: right;
     margin-right: -0.5em;
     opacity: 0.5;
-    position: relative;
+}
+.back-to-top a {
+    position: fixed;
     bottom:3.5em;
 }
-div .backtotop:hover {
+div .back-to-top:hover {
     opacity: 1;
 }
 
