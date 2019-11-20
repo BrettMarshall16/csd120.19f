@@ -52,13 +52,10 @@ header nav {
     margin-right:2em;
     margin-left:2em;
     margin-top:-4px;
-<<<<<<< HEAD
     overflow: hidden;
-=======
     height:auto;
     border-width:auto;
     overflow: auto;
->>>>>>> refs/heads/master
 }
 
 .byline {
@@ -75,7 +72,8 @@ header nav {
 
 .bio {
     text-indent: 3em;
-    grid-row: 1 / span 3; grid-column: 1 / span 3;
+    grid-row: 1 / 4; 
+    grid-column: 1 / 4;
 }
 
 footer {
@@ -215,14 +213,14 @@ body {
     grid-template-columns: 25% 25% 25% 25%;
 }
 
-img .gallery {
+.gallery img {
     max-width: 100%;
     display: block;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
 }
 
-.row-span-2 {
-  grid-row: 1 / span 2;  
-}
-.col-span-2{
-    grid-column: 1 / span 2;
+.gallery img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
 }
