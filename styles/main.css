@@ -42,10 +42,6 @@ nav ul {
     justify-content: center;
 }
 
-nav li{
-    
-}
-
 header nav {
     border-bottom: 1px dotted ;
     border-bottom-color: rgba(0, 0, 0, .3);
@@ -166,6 +162,7 @@ header {
     border-top: 4px solid;
     border-color: rgba(0, 0, 0, 0.1)
 }
+    
 
 nav a:hover {
     border-top:4px solid red;
@@ -232,4 +229,65 @@ body {
 
 .col-span-2 {
     grid-column: span 2;
+}
+
+@media screen and (max-width: 768px) {
+    hr footer{
+        display: none;
+        visibility: hidden;
+    }
+    
+    .paperclip{
+        display: none;
+        visibility: hidden;
+    }
+    
+    .mugshot{
+        float: none;
+        margin-top: 0;
+    }
+    
+    main{
+        display: block;
+    }
+    
+    .row-span-2 {
+        grid-row: span 1;
+    }
+
+    .col-span-2 {
+        grid-column: span 1;
+    }
+    
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1em;
+        align-items: center;
+        align-text: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    
+    nav a{
+        border: 0;
+    }
+    
+    nav a:hover{
+        border: 0;
+        border-bottom: 1px dotted purple;
+    }
+    
+    header nav .burger{
+        display: float;
+        width: 40px;
+        height: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        border-top: 5px solid black;
+        cursor: pointer;
+        
+        
+    }
+    
 }
