@@ -231,20 +231,24 @@ body {
     grid-column: span 2;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
 @media screen and (max-width: 768px) {
-    hr footer{
+    footer hr{
         display: none;
-        visibility: hidden;
     }
     
     .paperclip{
         display: none;
-        visibility: hidden;
     }
     
     .mugshot{
         float: none;
         margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
     }
     
     main{
@@ -259,12 +263,9 @@ body {
         grid-column: span 1;
     }
     
-    nav ul{
-        display: flex;
+    header nav ul{
         flex-direction: column;
-        margin-top: 1em;
-        align-items: center;
-        align-text: center;
+        text-align: center;
         padding-top: 1em;
         padding-bottom: 1em;
     }
@@ -275,17 +276,32 @@ body {
     
     nav a:hover{
         border: 0;
-        border-bottom: 1px dotted purple;
+        text-decoration: underline;
     }
     
-    header nav .burger{
-        display: float;
+    .burger{
         width: 40px;
-        height: 7px;
+        height: 25px;
         margin-left: auto;
         margin-right: auto;
         border-top: 5px solid black;
         cursor: pointer;
+        position: relative;
+        margin-top: 1em;
+    }
+    .burger::before {
+        content: "";
+        width: 40px;
+        border-top: 5px solid black;
+        position: absolute;
+        top: 5px;
+    }
+    .burger::after {
+        content: "";
+        width: 40px;
+        border-top: 5px solid black;
+        position: absolute;
+        top: 15px;
     }
 
     

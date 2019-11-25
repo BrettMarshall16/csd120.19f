@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/normal.css">
     <link rel="stylesheet" href="styles/main.css">
     <title>Brett Marshall's CSD120 Website</title>
@@ -21,17 +22,12 @@
     <div class="width-wrap">
             <header id="top">
                 <nav>
-                    <div class="burger">
-                    </div>
-                    <div class="burger">
-                    </div>
-                    <div class="burger">
-                    </div>
-                        <ul>
-                            <li><a href="index.html">Index</a></li>
-                            <li><a href="links.html">Links</a></li>
-                            <li><a href="glossary.html">Glossary</a></li>
-                        </ul>
+                    <div class="burger"></div>
+                    <ul>
+                        <li><a href="index.html">Index</a></li>
+                        <li><a href="links.html">Links</a></li>
+                        <li><a href="glossary.html">Glossary</a></li>
+                    </ul>
                 </nav>
             </header>
             
@@ -123,13 +119,11 @@
                         </span>
                     </blockquote>
                 <p id="page-copyright">&copy; 2019 <a href="mailto:Brett.Marshall@student.saultcollege.ca?subject=Messsage%20from%20CSD120%20Website">Brett Marshall</a></p>
-                <picture>
-                <source media="(min-width:1200px)" srcset="images/sc-logo@4x.png">
-                <source media="(min-width:1000px)" srcset="images/sc-logo@3x.png">
-                <source media="(min-width:800px)" srcset="images/sc-logo@2x.png">
-                <source media="(min-width:600px)" srcset="images/sc-logo@1.5x.png">
-                <img src="images/sc-logo@.png" alt="Sault College Logo">
-                </picture>
+                <img class="sc-logo" 
+                    src="images/sc-logo.png" 
+                    sizes="70px" 
+                    srcset="images/sc-logo.png 70w, images/sc-logo@1.5x.png 105w, images/sc-logo@2x.png 140w, images/sc-logo@3x.png 210w, images/sc-logo@4x.png 280w" 
+                    alt="Sault College Logo">
             </footer>
         <div class="back-to-top">
         <a href="#top">◤</a>
