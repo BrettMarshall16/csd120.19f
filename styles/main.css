@@ -235,6 +235,33 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+.table{
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.05);
+    padding-top: 0.3em;
+    padding-right: 1em;
+    padding-bottom: 0.3em;
+    padding-left: 1em;
+    border-right: 3px solid #D833FF;
+    border-left: 3px solid #D833FF;
+}
+table td{
+    border-left: 3px solid #D833FF;
+}
+table .space{
+    border-left: 3px solid #D833FF;
+}
+.table .dark{
+    background: rgba(0, 0, 0, 0.1);
+}
+.table .second{
+    border-top: 3px solid #D833FF;
+}
+
+
+
+
 @media screen and (max-width: 768px) {
     footer hr{
         display: none;
