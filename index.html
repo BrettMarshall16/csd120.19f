@@ -72,54 +72,54 @@
             <section>
             <h2>My Sault College Courses</h2>
                 <table class="table">
-  <tr>
-    <th class="dark space">Term</th>
-    <th class="dark space">Code</th>
-    <th class="dark space">Course Name</th>
-  </tr>
-  <tr>
-    <td class="dark second" rowspan="5">Fall</td>
-    <td class="second">CSD105</td>
-    <td class="second">Python</td>
-  </tr>
-  <tr>
-    <td class="dark">CSD120</td>
-    <td class="dark">Introduction to Web Development</td>
-  </tr>
-  <tr>
-    <td>CSO104</td>
-    <td>Introduction to Operating Systems and LAN</td>
-  </tr>
-  <tr>
-    <td class="dark">MTH122</td>
-    <td class="dark">Computer Mathematics</td>
-  </tr>
-  <tr>
-    <td>TNY130</td>
-    <td>Technology in Society</td>
-  </tr>
-  <tr>
-    <td class="dark second" rowspan="5">Winter</td>
-    <td class="dark second">CSA103</td>
-    <td class="dark second">Business Applications I</td>
-  </tr>
-  <tr>
-    <td>CSD102</td>
-    <td>Programming Using C++</td>
-  </tr>
-  <tr>
-    <td class="dark">CSD212</td>
-    <td class="dark">Web Scripiting Languagues</td>
-  </tr>
-  <tr>
-    <td>CSO102</td>
-    <td>Introduction to Linux</td>
-  </tr>
-  <tr>
-    <td class="dark">CST104</td>
-    <td class="dark">PC Hardware and Netowrking</td>
-  </tr>
-</table>
+                      <tr>
+                        <th class="dark space">Term</th>
+                        <th class="dark space">Code</th>
+                        <th class="dark space">Course Name</th>
+                      </tr>
+                      <tr>
+                        <td class="dark second" rowspan="5">Fall</td>
+                        <td class="second">CSD105</td>
+                        <td class="second">Python</td>
+                      </tr>
+                      <tr>
+                        <td class="dark">CSD120</td>
+                        <td class="dark">Introduction to Web Development</td>
+                      </tr>
+                      <tr>
+                        <td>CSO104</td>
+                        <td>Introduction to Operating Systems and LAN</td>
+                      </tr>
+                      <tr>
+                        <td class="dark">MTH122</td>
+                        <td class="dark">Computer Mathematics</td>
+                      </tr>
+                      <tr>
+                        <td>TNY130</td>
+                        <td>Technology in Society</td>
+                      </tr>
+                      <tr>
+                        <td class="dark second" rowspan="5">Winter</td>
+                        <td class="dark second">CSA103</td>
+                        <td class="dark second">Business Applications I</td>
+                      </tr>
+                      <tr>
+                        <td>CSD102</td>
+                        <td>Programming Using C++</td>
+                      </tr>
+                      <tr>
+                        <td class="dark">CSD212</td>
+                        <td class="dark">Web Scripiting Languagues</td>
+                      </tr>
+                      <tr>
+                        <td>CSO102</td>
+                        <td>Introduction to Linux</td>
+                      </tr>
+                      <tr>
+                        <td class="dark">CST104</td>
+                        <td class="dark">PC Hardware and Netowrking</td>
+                      </tr>
+                </table>
             </section>
             
             <section class="gallery">
@@ -160,6 +160,40 @@
 
             </div>
             </section>
+            
+            <section class="survey">
+            <h2>Survey</h2>
+            <form method="get" id="form1">
+            <label for="name">What is your name?:</label>
+            <input type="text" id="name_field">
+            <label for="email">What is your email?:</label>
+            <input type="text" id="email_field">
+            <label for="integer">What is the best integer:</label>
+            <input type="number" id="best_integer">
+            <label for="day">What is the best day?:</label>
+            <input type="text" id="best_day">
+            <label for="bear">Which bear is best?:</label>
+            <input type="text" id="bear" list="bears">
+            <datalist id="bears">
+                <option></option>
+                <option>Black</option>
+                <option>Brown</option>
+                <option>Care</option>
+                <option>Panda</option>
+                <option>Polar</option>
+                <option>Teddy</option>
+            </datalist>
+            <label>Do you like radio buttons?<label>
+            <label><input type="radio" name="yes" value="yes"> Yes</label>
+            <label><input type="radio" name="no" value="no"> No</label>
+            <label><input type="radio" name="maybe" value="maybe" checked> ?</label>
+            <label>What is the meaning of life?:</label>
+            <textarea name="meaning" rows="10">Enter the correct answer here</textarea>
+            <button type="submit" form="form1" value="submit">Send</button>
+            
+            </form>
+            </section>
+            
             
             </main>
             

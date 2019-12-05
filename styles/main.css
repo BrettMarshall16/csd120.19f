@@ -258,9 +258,21 @@ table .space{
 .table .second{
     border-top: 3px solid #D833FF;
 }
+.survey{
+    grid-column: span 2;
+    
+}
 
-
-
+form {
+    display: Grid;
+}
+form label {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+button[submit]{
+    margin-top:1em;
+}
 
 @media screen and (max-width: 768px) {
     footer hr{
