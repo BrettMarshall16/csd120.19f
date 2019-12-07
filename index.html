@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/normal.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/BaguetteBox.css">
+    <script type="text/javascript" src="styles/BaguetteBox.js"></script>
     <title>Brett Marshall's CSD120 Website</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -23,6 +25,7 @@
             <header id="top">
                 <nav>
                     <div class="burger"></div>
+
                     <ul>
                         <li><a href="index.html">Index</a></li>
                         <li><a href="links.html">Links</a></li>
@@ -163,17 +166,17 @@
             
             <section class="survey">
             <h2>Survey</h2>
-            <form method="get" id="form1">
+            <form action="https://formspree.io/mrgboara" method="post" id="form1">
             <label for="name">What is your name?:</label>
-            <input type="text" id="name_field">
+            <input type="text" name="name" id="name_field">
             <label for="email">What is your email?:</label>
-            <input type="text" id="email_field">
+            <input type="text" name="email" id="email_field">
             <label for="integer">What is the best integer:</label>
-            <input type="number" id="best_integer">
+            <input type="number" name="integer" id="best_integer">
             <label for="day">What is the best day?:</label>
-            <input type="text" id="best_day">
+            <input type="text" name="day" id="best_day">
             <label for="bear">Which bear is best?:</label>
-            <input type="text" id="bear" list="bears">
+            <input type="text" id="bear" name="bear" list="bears">
             <datalist id="bears">
                 <option></option>
                 <option>Black</option>
@@ -183,13 +186,13 @@
                 <option>Polar</option>
                 <option>Teddy</option>
             </datalist>
-            <label>Do you like radio buttons?<label>
-            <label><input type="radio" name="yes" value="yes"> Yes</label>
-            <label><input type="radio" name="no" value="no"> No</label>
-            <label><input type="radio" name="maybe" value="maybe" checked> ?</label>
-            <label>What is the meaning of life?:</label>
-            <textarea name="meaning" rows="10">Enter the correct answer here</textarea>
-            <button type="submit" form="form1" value="submit">Send</button>
+            <label>Do you like radio buttons?<label><br><br>
+            <label><input type="radio" name="yes" value="yes"> Yes</label><br><br>
+            <label><input type="radio" name="no" value="no"> No</label><br><br>
+            <label><input type="radio" name="maybe" value="maybe" checked> ?</label><br><br>
+            <label>What is the meaning of life?:</label><br><br>
+            <textarea name="meaning" rows="10" cols="120">Enter the correct answer here</textarea><br>
+            <button type="submit" form="form1" value="submit" class="submit">Send</button><br>
             
             </form>
             </section>
@@ -216,5 +219,10 @@
         <a href="#top">◤</a>
         </div>
     </div>
+    <script>
+            baguetteBox.run('.gallery-thumbnails', { 
+            filter: /picsum\.photos\/id/i 
+        });
+    </script>
 </body>
 </html>
