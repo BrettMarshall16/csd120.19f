@@ -50,7 +50,6 @@ header nav {
     margin-top:-4px;
     overflow: hidden;
     height:auto;
-    border-width:auto;
     overflow: auto;
 }
 
@@ -363,5 +362,14 @@ input[type="checkbox"]{
     input[id=burger]:checked ~ .burger {
         transform: translate(-5px, 10px);
         transform: rotate(45deg);
+    }
+    input[id=burger]:checked burger::before {
+        opacity: 0;
+        transition: all 200ms ease ;
+    }
+    input[id=burger]:checked burger::after {
+        transform: translate(0px, 20px);
+        transform: rotate(-90deg);
+        transition: all 200ms ease ;
     }
 }
