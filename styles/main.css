@@ -238,14 +238,15 @@ img {
 .table{
     border-collapse: collapse;
     background: rgba(0, 0, 0, 0.05);
+}
+table td,
+table th {
+    border-left: 3px solid #D833FF;
     padding-top: 0.3em;
     padding-right: 1em;
     padding-bottom: 0.3em;
     padding-left: 1em;
     border-right: 3px solid #D833FF;
-    border-left: 3px solid #D833FF;
-}
-table td{
     border-left: 3px solid #D833FF;
 }
 table .space{
@@ -320,7 +321,7 @@ input[type="checkbox"]{
         margin-top: 1em;
         margin-bottom: 1em;
         overflow: hidden;
-        transition: all 500ms ease ;
+        transition: all 500ms ease-in-out ;
     }
     
     nav a{
@@ -356,20 +357,23 @@ input[type="checkbox"]{
         position: absolute;
         top: 15px;
     }
+
+    .burger,
+    .burger::after,
+    .burger::before {
+        transition: all 200ms ease ;
+    }
+
     input[type=checkbox]:checked ~ ul{
         height: 110px;
     }
     input[id=burger]:checked ~ .burger {
-        transform: translate(-5px, 10px);
-        transform: rotate(45deg);
+        transform: rotate(45deg) translate(5px, 10px);
     }
-    input[id=burger]:checked burger::before {
+    input[id=burger]:checked ~ .burger::before {
         opacity: 0;
-        transition: all 200ms ease ;
     }
-    input[id=burger]:checked burger::after {
-        transform: translate(0px, 20px);
-        transform: rotate(-90deg);
-        transition: all 200ms ease ;
+    input[id=burger]:checked ~ .burger::after {
+        transform: rotate(-90deg) translate(20px, 0px);
     }
 }
