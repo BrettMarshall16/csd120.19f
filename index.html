@@ -24,8 +24,8 @@
     <div class="width-wrap">
             <header id="top">
                 <nav>
-                    <label for="burger" class="burger"></label>
                     <input type="checkbox" id="burger" name="burger">
+                    <label for="burger" class="burger"></label>
 
                     <ul>
                         <li><a href="index.html">Index</a></li>
@@ -169,16 +169,15 @@
             <h2>Survey</h2>
             <form action="https://formspree.io/mrgboara" method="post" id="form1">
             <label for="name">What is your name?:</label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name_field" id="name" required>
             <label for="email">What is your email?:</label>
-            <input type="text" name="email" id="email">
+            <input type="email" name="email_field" id="email" required>
             <label for="integer">What is the best integer:</label>
-            <input type="number" name="integer" id="integer">
+            <input type="number" name="best_integer" id="integer">
             <label for="day">What is the best day?:</label>
-            <input type="text" name="day" id="day">
+            <input type="date" name="best_day" id="day">
             <label for="bear">Which bear is best?:</label>
-            <input type="text" id="bear" name="bear" list="bears">
-            <datalist id="bears">
+            <select id="bear" name="best_bear" list="bears">
                 <option></option>
                 <option>Black</option>
                 <option>Brown</option>
@@ -186,14 +185,14 @@
                 <option>Panda</option>
                 <option>Polar</option>
                 <option>Teddy</option>
-            </datalist>
+            </select>
             <label>Do you like radio buttons?</label><br><br>
-            <label><input type="radio" name="yes" value="yes"> Yes</label><br><br>
-            <label><input type="radio" name="no" value="no"> No</label><br><br>
-            <label><input type="radio" name="maybe" value="maybe" checked> ?</label><br><br>
-            <label>What is the meaning of life?:</label><br><br>
-            <textarea name="meaning" rows="10" cols="120">Enter the correct answer here</textarea><br>
-            <button type="submit" form="form1" value="submit" class="submit">Send</button><br>
+            <label><input type="radio" name="group1" value="yes"> Yes</label>
+            <label><input type="radio" name="group1" value="no"> No</label>
+            <label><input type="radio" name="group1" value="?" checked> ?</label>
+            <label for="life_meaning">What is the meaning of life?:</label>
+            <textarea name="life_meaning" id="life_meaning" rows="10" cols="120" placeholder="Enter the correct answer here"></textarea>
+            <button type="submit" value="submit" class="submit">Send</button>
             
             </form>
             </section>
@@ -221,7 +220,7 @@
         </div>
     </div>
     <script>
-            baguetteBox.run('.gallery-thumbnails', { 
+        baguetteBox.run('.gallery-thumbnails', { 
             filter: /picsum\.photos\/id/i 
         });
     </script>
